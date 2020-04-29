@@ -1,4 +1,4 @@
-package com.accenture.lkm.hibernate.utility;
+package com.hibernate.utility;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
