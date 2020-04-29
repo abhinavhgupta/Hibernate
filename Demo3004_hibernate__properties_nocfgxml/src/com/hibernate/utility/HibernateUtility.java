@@ -1,4 +1,4 @@
-package com.accenture.lkm.hibernate.utility;
+package com.hibernate.utility;
 
 import java.util.Properties;
 
@@ -8,7 +8,7 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
-import com.accenture.lkm.hibernate.entity.Employee;
+import com.hibernate.entity.Employee;
 
 public class HibernateUtility {
 
@@ -30,7 +30,7 @@ public class HibernateUtility {
 		standardRegistry = new StandardServiceRegistryBuilder().applySettings(properties).build();
 
 		Metadata metadata = new MetadataSources(standardRegistry).
-				addAnnotatedClass(Employee.class)
+				addAnnotatedClass(Employee.class)//when we dont have hbm.xml file, here we can mention annotated class
 				.getMetadataBuilder()
 				.build();
 
