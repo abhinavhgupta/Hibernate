@@ -1,4 +1,4 @@
-package com.accenture.lkm.hibernate.entity;
+package com.hibernate.entity;
 
 import java.io.Serializable;
 import java.time.LocalDate;
