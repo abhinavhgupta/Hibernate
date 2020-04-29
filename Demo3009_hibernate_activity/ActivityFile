@@ -1,0 +1,7 @@
+Create a Product entity having the below attributes
+productId, productType, productName, productAddedDate
+and insert the product records using hibernate 5 model
+
+use java.time API for productAddedDate attribute to store the date
+use Map of hibernate to configure the sessionFactory
+

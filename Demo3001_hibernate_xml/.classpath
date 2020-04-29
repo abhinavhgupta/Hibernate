@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_241">
+		<attributes>
+			<attribute name="module" value="true"/>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/abhinav.h.gupta/Documents/hibernate/day 1/hibernatelibrary/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhinav.h.gupta/Documents/hibernate/day 1/hibernatelibrary/classmate-1.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhinav.h.gupta/Documents/hibernate/day 1/hibernatelibrary/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhinav.h.gupta/Documents/hibernate/day 1/hibernatelibrary/hibernate-commons-annotations-5.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhinav.h.gupta/Documents/hibernate/day 1/hibernatelibrary/hibernate-core-5.2.17.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhinav.h.gupta/Documents/hibernate/day 1/hibernatelibrary/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhinav.h.gupta/Documents/hibernate/day 1/hibernatelibrary/jandex-2.0.3.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhinav.h.gupta/Documents/hibernate/day 1/hibernatelibrary/ehcache-2.10.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhinav.h.gupta/Documents/hibernate/day 1/hibernatelibrary/jboss-logging-3.3.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhinav.h.gupta/Documents/hibernate/day 1/hibernatelibrary/jboss-transaction-api_1.2_spec-1.0.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhinav.h.gupta/Documents/hibernate/day 1/hibernatelibrary/mysql-connector-java-5.1.38.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhinav.h.gupta/Documents/hibernate/day 1/hibernatelibrary/slf4j-api-1.7.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/abhinav.h.gupta/Documents/hibernate/day 1/hibernatelibrary/javassist-3.22.0-GA.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
