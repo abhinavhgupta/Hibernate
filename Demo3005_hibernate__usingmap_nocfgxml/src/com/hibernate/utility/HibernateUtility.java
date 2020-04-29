@@ -1,4 +1,4 @@
-package com.accenture.lkm.hibernate.utility;
+package com.hibernate.utility;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -10,7 +10,7 @@ import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Environment;
 
-import com.accenture.lkm.hibernate.entity.Employee;
+import com.hibernate.entity.Employee;
 
 public class HibernateUtility {
 
@@ -29,9 +29,13 @@ public class HibernateUtility {
 		settings.put(Environment.SHOW_SQL, "true");
 
 		
-		standardRegistry = new StandardServiceRegistryBuilder().applySettings(settings).build();
+		standardRegistry = new StandardServiceRegistryBuilder()
+				.applySettings(settings)
+				.build();
 
-		Metadata metadata = new MetadataSources(standardRegistry).addAnnotatedClass(Employee.class).getMetadataBuilder()
+		Metadata metadata = new MetadataSources(standardRegistry)
+				.addAnnotatedClass(Employee.class)
+				.getMetadataBuilder()
 				.build();
 
 		sessionFactory = metadata.getSessionFactoryBuilder().build();
