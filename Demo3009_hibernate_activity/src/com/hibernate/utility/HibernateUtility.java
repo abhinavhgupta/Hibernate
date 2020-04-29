@@ -1,4 +1,4 @@
-package com.accenture.lkm.hibernate.utility;
+package com.hibernate.utility;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -10,7 +10,7 @@ import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Environment;
 
-import com.accenture.lkm.hibernate.entity.Product;
+import com.hibernate.entity.Product;
 
 public class HibernateUtility {
 
@@ -22,7 +22,7 @@ public class HibernateUtility {
 		settings.put(Environment.DRIVER, "com.mysql.jdbc.Driver");
 		settings.put(Environment.USER, "root");
 		settings.put(Environment.PASS, "root");
-		settings.put(Environment.URL, "jdbc:mysql://localhost:3306/hibernate_activity1");
+		settings.put(Environment.URL, "jdbc:mysql://localhost:3306/hibernatedemos");
 		settings.put(Environment.HBM2DDL_AUTO, "create");
 		settings.put(Environment.DIALECT, "org.hibernate.dialect.MySQL57Dialect");
 		settings.put(Environment.SHOW_SQL, "true");
