@@ -1,20 +1,20 @@
-package com.accenture.lkm.hibernate.client;
+package com.hibernate.client;
 
 import org.hibernate.Session;
 
-import com.accenture.lkm.hibernate.entity.Employee;
-import com.accenture.lkm.hibernate.utility.HibernateUtility;
+import com.hibernate.entity.Employee;
+import com.hibernate.utility.HibernateUtility;
 
-public class EmployeeClient_loadmethod {
+public class EmployeeClient_getmethod {
 
 	public static void main(String[] args) {
 		Session session = HibernateUtility.getSessionFactory().openSession();
 		session.beginTransaction();
-		Employee employee = session.load(Employee.class, 1003);
+		Employee employee = session.get(Employee.class, 1003);
 		System.out.println(employee.getEmployeeId()+", "+employee.getEmployeeName());
 		/*if(employee != null) {
 			System.out.println(employee.getEmployeeId()+", "+employee.getEmployeeName());
-		}*/	
+		}*/
 		session.getTransaction().commit();
 		session.close();
 		HibernateUtility.shutdownSessionFactory();
