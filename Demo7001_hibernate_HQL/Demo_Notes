@@ -1,0 +1,30 @@
+get method will throw NullpointerException if the data is not available in the database
+
+eg: 
+Retrieving : Employee employee = session.get(Employee.class, 1003);
+
+Data is not available in database
+
+	INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2766ca9d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+    Hibernate: select employee0_.EMPLOYEE_ID as EMPLOYEE1_0_0_, employee0_.EMPLOYEENAME as EMPLOYEE2_0_0_, employee0_.ROLE as ROLE3_0_0_, employee0_.SALARY as SALARY4_0_0_ from EMPLOYEE employee0_ where employee0_.EMPLOYEE_ID=?
+    Exception in thread "main" java.lang.NullPointerException
+	at com.accenture.lkm.hibernate.client.EmployeeClientTransientToPersistent.main(EmployeeClientTransientToPersistent.java:14)
+	
+load method:
+load method will throw any ObjectNotFoundException if the data is not available in database and shows appropriate message
+
+eg:
+Retrieving : Employee employee = session.get(Employee.class, 1003);
+
+Data is not available in database
+
+	INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@2766ca9d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+    Hibernate: select employee0_.EMPLOYEE_ID as EMPLOYEE1_0_0_, employee0_.EMPLOYEENAME as EMPLOYEE2_0_0_, employee0_.ROLE as ROLE3_0_0_, employee0_.SALARY as SALARY4_0_0_ from EMPLOYEE employee0_ where employee0_.EMPLOYEE_ID=?
+    Exception in thread "main" org.hibernate.ObjectNotFoundException: No row with the given identifier exists: [com.accenture.lkm.hibernate.entity.Employee#1003]
+	at org.hibernate.boot.internal.StandardEntityNotFoundDelegate.handleEntityNotFound(StandardEntityNotFoundDelegate.java:28)
+	at org.hibernate.proxy.AbstractLazyInitializer.checkTargetState(AbstractLazyInitializer.java:244)
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:166)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:268)
+	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.invoke(JavassistLazyInitializer.java:73)
+	at com.accenture.lkm.hibernate.entity.Employee_$$_jvstd38_0.getEmployeeName(Employee_$$_jvstd38_0.java)
+	at com.accenture.lkm.hibernate.client.EmployeeClient_loadmethod.main(EmployeeClient_loadmethod.java:14)
