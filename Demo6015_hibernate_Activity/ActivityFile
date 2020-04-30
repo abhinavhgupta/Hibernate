@@ -1,0 +1,14 @@
+Activity :
+
+Scenario 1:
+	Assume an employee joined in the project should assign a work location,
+	Implement the association between the employee and worklocation by identifing appropriate attributes
+	and perform the insert operation when ever an employee created then assign a worklocation to the employee
+
+
+Scenario 2:
+	Implement the below association
+	One employee many skills 
+	Association be specified on both sides
+	Perform all the CRUD operations
+	
