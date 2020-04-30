@@ -1,0 +1,15 @@
+Hibernate-EHCache
+
+if cache strategy is read only then we cannot perform update operation
+if try will get the below error
+
+	java.lang.UnsupportedOperationException: Can't write to a readonly object 
+	
+	Note : using hibernate we cannot apply the multiple cache strategies on the entity,
+	 because @Cache is not a @Repeatable annotation
+	
+Cache strategies:
+
+	READ_ONLY
+	READ_WRITE
+	NONSTRICT_READ_WRITE
