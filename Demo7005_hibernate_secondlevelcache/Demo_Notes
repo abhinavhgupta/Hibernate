@@ -1,0 +1,16 @@
+Hibernate-EHCache
+
+First Observation: Jars - added hibernate-ehcache jar[should match with hibernate version] 
+and ehcache jar[compatible with hibernate version]
+
+Maven dependency:
+<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-ehcache -->
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-ehcache</artifactId>
+    <version>5.2.17.Final</version>
+</dependency>
+
+
+for cache manager naming with latest version
+https://stackoverflow.com/questions/47670594/another-unnamed-cachemanager-already-exists-when-using-hibernate-l2-ehcache-and
