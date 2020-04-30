@@ -19,11 +19,11 @@ public class EmployeeAssetClientRerieve {
 		
 		Query query = session.createQuery("from Employee");
 		list = query.getResultList();
-		for (Employee e : list) {
+		/*for (Employee e : list) {
 			System.out.println(e.getEmployeeId()+", "+e.getEmployeeName()+", "+e.getAsset().getAssetName()+", "+e.getAsset().getAssetBrandName());
-		}
+		}*/
 		
-		list.stream().forEach(System.out::println);
+		list.stream().forEach((e)->System.out.println(e.getEmployeeId()+", "+e.getEmployeeName()));
 		
 		session.close();
 		HibernateUtility.shutdownSessionFactory();
