@@ -1,0 +1,16 @@
+Activity 1:
+
+Scenario: 
+	Find and implement which inheritance strategy is suitable for the below scenario
+	In an organization an employee categorized into RegularEmployee and ContractEmployee, where
+	the RegularEMployee and ContractEmployee inherits the Employee.
+	The difference lies in wage of the employees where RegularEmployee has a wage of 500 -  
+	- more than contract employee
+	
+	Create the entites and its associated properties on you own and implement the best strategy required
+	
+	
+
+
+	 
+
