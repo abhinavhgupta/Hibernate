@@ -10,6 +10,6 @@
   <property name="hibernate.hbm2ddl.auto">update</property>
   <property name="hibernate.show_sql">true</property>
   <property name="hibernate.dialect">org.hibernate.dialect.MySQL57Dialect</property>
-  <mapping class="com.accenture.lkm.hibernate.entity.Employee"/>
+  <mapping class="com.hibernate.entity.Employee"/>
  </session-factory>
 </hibernate-configuration>

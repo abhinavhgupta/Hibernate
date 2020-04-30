@@ -16,7 +16,9 @@ public class HibernateUtility {
 				.configure() // configures settings from hibernate.cfg.xml
 				.build();
 
-		Metadata metadata = new MetadataSources(standardRegistry).getMetadataBuilder().build();
+		Metadata metadata = new MetadataSources(standardRegistry)
+				.getMetadataBuilder()
+				.build();
 
 		sessionFactory = metadata.getSessionFactoryBuilder().build();
 		return sessionFactory;

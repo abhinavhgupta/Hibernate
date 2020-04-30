@@ -1,4 +1,4 @@
-package com.accenture.lkm.hibernate.entity;
+package com.hibernate.entity;
 
 import java.io.Serializable;
 
@@ -14,7 +14,7 @@ import javax.persistence.Table;
 public class Employee implements Serializable{
 	private static final long serialVersionUID = 1L;
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="EMPLOYEE_ID")
 	private int employeeId;
 	@Column(name="EMPLOYEENAME") //display column name in the table

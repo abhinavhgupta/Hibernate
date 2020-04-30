@@ -1,9 +1,9 @@
-package com.accenture.lkm.hibernate.client;
+package com.hibernate.client;
 
 import org.hibernate.Session;
 
-import com.accenture.lkm.hibernate.entity.Employee;
-import com.accenture.lkm.hibernate.utility.HibernateUtility;
+import com.hibernate.entity.Employee;
+import com.hibernate.utility.HibernateUtility;
 
 public class EmployeeClient3_DetachedToPersistent {
 
