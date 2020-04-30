@@ -1,0 +1,34 @@
+Activity 1:
+
+Scenario 1: 
+	create a Student entity with the below attributes
+	studentId, studentName, studentGrade, studentAveragemarks
+	
+	insert at least 8 records with different data
+	
+Write the queries for following requirements
+
+Req 1: Retrieve the student names start with 'some_letter'
+Req 2: Retrieve the student average lies in  'some_value1' to 'some_value2'
+Req 3: Retrieve the student average lies in  'some_value1' to 'some_value2' 
+		order by high to low use query parameter approach
+Req 4: Retrieve the student details using HQL and CriteriaQuery
+Req 5: Retrieve the student names using TypedQuery
+
+Scenario 2: 
+	Create a Customer entity who can have multiple types of accounts like saving-account and 
+	current-account.
+	
+	Identify the respective attributes and create the entities 
+	specify the association, and insert the data accordingly
+	
+	While retrieving the data from the tables use Cache mechanism to reduce the
+	number of hits to data base.
+	Implement EHCache as L2 cache
+	
+
+
+	 
+	
+	
+	

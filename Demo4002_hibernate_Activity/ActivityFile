@@ -1,0 +1,4 @@
+Create a Student entity and perform the Hibernate API methods to persist, detach and reattach and 
+delete the object from its persistence context.
+
+Use the other methods of the API to perform the operations, apart of used methods like save, work with saveOrUpdate() 
